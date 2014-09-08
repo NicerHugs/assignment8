@@ -1,0 +1,50 @@
+body {
+  font-family: helvetica;
+}
+
+h1 {
+  text-align: center;
+}
+
+.accordion {
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.accordion>div {
+  border: 1px solid #ededed;
+}
+
+h2{
+  font-size: 1.5em;
+  font-weight: normal;
+  padding: .5em;
+  background: #f0f0f0;
+  margin: 0;
+}
+
+.active h2 {
+  font-weight: bold;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.content {
+  max-height: 0;
+  padding: 0 1em;
+  transition-duration: .5s;
+  overflow: hidden;
+}
+
+.active .content {
+  max-height: 18px;
+}
+
+table {
+  margin: 0 auto;
+  background: pink;
+}
+td {
+  border: solid 1px black;
+  text-align: center;
+}
