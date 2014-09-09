@@ -40,11 +40,79 @@ h2{
   max-height: 18px;
 }
 
-table {
-  margin: 0 auto;
-  background: pink;
+section {
+  position: relative;
+  margin: 1em;
 }
-td {
-  border: solid 1px black;
+
+.table-buttons {
+  position: absolute;
+  top: 25px;
+  left: 100px;
+  width: 100px;
+}
+
+.table-buttons a {
+  display: block;
+  width: 90px;
+  height: 30px;
+  border: solid 1px #dedede;
+  border-radius: 3px;
+  background: #f0f0f0;
+  margin: 3px;
   text-align: center;
+  line-height: 30px;
+  text-decoration: none;
+  color: black;
+}
+
+.table-buttons a:hover {
+  background: linear-gradient(#f0f0f0, #dedede);
+}
+
+table {
+  color: black;
+  position: absolute;
+  top: 0;
+  left: 200px;
+  border-spacing: 0;
+  border: 1px solid #f0f0f0;
+  table-layout: fixed;
+  width: 50%;
+}
+tr {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+th {
+  background: #e0e0e0 !important;
+  font-family: helvetica;
+  overflow: hidden;
+  width: 0;
+  padding: .5em;
+}
+
+.heading-column {
+  width: 50%;
+}
+
+.open {
+  width: 50%;
+}
+
+td {
+  padding: .5em;
+  border-bottom: 1px solid #ededed;
+  text-align: center;
+  overflow: hidden;
+}
+
+tr:last-of-type td {
+  border-bottom: none !important;
+}
+
+.heading-column {
+  background: #fafafa;
 }

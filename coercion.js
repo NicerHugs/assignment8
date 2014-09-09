@@ -1,5 +1,6 @@
 var typeExamples = [undefined, null, true, false, "", "1.2", "one", 0, -0, NaN, Infinity, -Infinity, 1, {}, [], [12], ['something'], function(){}];
 
+var typeTitles = ["undefined", "null", "true", "false", '""', '"1.2"', '"one"', "0", "-0", "NaN", "Infinity", "-Infinity", "1", "{}", "[]", "[12]", "['something']", "function(){}"];
 
 function coerceToNumber(array) {
   return array.map(function(item){
